@@ -42,6 +42,16 @@ public class StructuredType {
         }
 
     }
+    public double TotalPrice() {
+        return price * quantity;
+    }
+
+    public double updatePrice (double percent) {
+        price = price + price * percent/100;
+
+        return price;
+
+    }
 }
 
 
